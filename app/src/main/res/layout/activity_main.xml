@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_city"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context="ru.mail.park.weather.CityActivity">
+
+    <TextView
+        android:id="@+id/text_weather_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather Info!"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btn_city_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vice_City1" />
+
+    <Button
+        android:id="@+id/btn_enable_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Обновлять в фоне" />
+
+    <Button
+        android:id="@+id/btn_disable_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Не обновлять в фоне" />
+
+</LinearLayout>
