@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private WeatherStorage weatherStorage;
 
-    public final  String WEATHER_LOAD_ACTION = "ru.mail.park.weather.action.weather_load";
+    public final static String WEATHER_LOAD_ACTION = "ru.mail.park.weather.action.weather_load";
 
     BroadcastReceiver broadcastReceiver;
 
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        IntentFilter intentFilter = new IntentFilter(this.WEATHER_LOAD_ACTION);
+        IntentFilter intentFilter = new IntentFilter(WEATHER_LOAD_ACTION);
         broadcastReceiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
